@@ -19,8 +19,6 @@ foreach ($includes as $pattern) {
     }
 }
 
-
-
 if (file_exists(ROOT . '/vendor/autoload.php')) {
     require ROOT . '/vendor/autoload.php';
 }
@@ -60,7 +58,10 @@ $errorHook->addNotifier(
             Debug_ErrorHook_TextNotifier::LOG_ALL,
             cfg()->baseurl . "/" . cfg()->errorHook->rss->submit
         ),
-        ROOT . "/data/tmp/errorHook", # lock directory
-        cfg()->errorHook->resendTimeout # do not resend the same error within resendTimeout seconds
+
+        # lock directory
+        ROOT . "/data/tmp/errorHook",
+        # do not resend the same error within resendTimeout seconds
+        cfg()->errorHook->resendTimeout
     )
 );
