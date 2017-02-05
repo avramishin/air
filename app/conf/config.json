@@ -1,0 +1,27 @@
+{
+  "baseurl": "http://air.dev",
+  "timezone": "UTC",
+  "errorHook": {
+    "resendTimeout": 600,
+    "rss": {
+      "submit": "rss/submit",
+      "view": "rss/view",
+      "list": "rss/list"
+    }
+  },
+  "db": {
+    "cashout": {
+      "host": "localhost",
+      "user": "root",
+      "pass": "",
+      "name": "cashout",
+      "type": "mysql"
+    }
+  },
+  "memcache": {
+    "host": "localhost",
+    "port": "11211",
+    "timeout": 600,
+    "active": false
+  }
+}
