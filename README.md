@@ -20,4 +20,4 @@ Directory structure
   * /logs - all logs
 * /tools - various cli tools 
   * /db-model-generator - run cli "php generate.php" to create/update models for database tables 
-* /vendor - composer files
+* /vendor - composer files, run "composer update" to create/update dependencies
