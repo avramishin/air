@@ -31,4 +31,4 @@ There is no special naming convention for controller class name, but it is recom
 There several useful methods in [Air\Controller](https://github.com/avramishin/air/blob/master/core/classes/Controller.php) class:
 * `Air\Controller::r($name, $default = '')` - to get and trim value from `$_REQUEST['name']` if value does not exist `$default` is returned. If `$_REQUEST['name']` is not simple scalar value, for example Array, it is returned as is.
 * `Air\Controller::jsonResponse()` - to create and get instance of `Air\JsonResponse` if you need to output JSON. 
-* `Air\Controller::getTwig` - to get instance of `Twig_Environment` to render templates from `/app/views/`
+* `Air\Controller::getTwig()` - to get instance of `Twig_Environment` to render templates from `/app/views/`

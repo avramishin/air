@@ -6,7 +6,7 @@ Directory structure
   * /conf - json configuration files
     * config.json - default configuration
     * config.local.json - local configuration to override default values
-  * /controllers - your controllers, files & dir structure is url components
+  * [/controllers](https://github.com/avramishin/air/tree/master/app/controllers) - your controllers, files & dir structure is url components
   * /cron - your scripts used in crontab
   * /events - event's handlers
   * /libs - dir for thrirdparty libs if they can't be installed from composer
