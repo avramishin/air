@@ -4,17 +4,17 @@
   "errorHook": {
     "resendTimeout": 600,
     "rss": {
-      "submit": "rss/submit",
-      "view": "rss/view",
-      "list": "rss/list"
+      "submit": "air/rss/submit",
+      "view": "air/rss/view",
+      "list": "air/rss/list"
     }
   },
   "db": {
-    "cashout": {
+    "core": {
       "host": "localhost",
-      "user": "root",
-      "pass": "",
-      "name": "cashout",
+      "user": "airuser",
+      "pass": "airpass",
+      "name": "air",
       "type": "mysql"
     }
   },

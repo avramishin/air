@@ -171,9 +171,9 @@ class AbstractTable
     }
 
     /**
-     * Return DalMysqlQuery select query
+     * Return MySqlQuery select query
      * @param string $what Columns to select
-     * @return DalMysqlQuery
+     * @return MySqlQuery
      */
     static function querySelect($what = '*')
     {
@@ -185,8 +185,8 @@ class AbstractTable
     }
 
     /**
-     * Return DalMysqlQuery delete query
-     * @return DalMysqlQuery
+     * Return MySqlQuery delete query
+     * @return MySqlQuery
      */
     static function queryDelete()
     {
@@ -194,9 +194,9 @@ class AbstractTable
     }
 
     /**
-     * Return DalMysqlQuery update query
+     * Return MySqlQuery update query
      * @param array $fields affected fields
-     * @return DalMysqlQuery
+     * @return MySqlQuery
      */
     static function queryUpdate($fields)
     {
@@ -209,9 +209,9 @@ class AbstractTable
     }
 
     /**
-     * Return DalMysqlQuery replace
+     * Return MySqlQuery replace
      * @param array $fields affected fields
-     * @return DalMysqlQuery
+     * @return MySqlQuery
      */
     static function queryReplace($fields)
     {
@@ -224,9 +224,9 @@ class AbstractTable
     }
 
     /**
-     * Return DalMysqlQuery insert query
+     * Return MySqlQuery insert query
      * @param array $fields affected fields
-     * @return DalMysqlQuery
+     * @return MySqlQuery
      */
     static function queryInsert($fields)
     {
@@ -240,9 +240,9 @@ class AbstractTable
 
     /**
      * Generate where statement
-     * @param DalMysqlQuery $db
+     * @param MySqlQuery $db
      * @param array $key Values for primary key
-     * @return DalMysqlQuery
+     * @return MySqlQuery
      */
     static function generateWhere($db, $key)
     {
