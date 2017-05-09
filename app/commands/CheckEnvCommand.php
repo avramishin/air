@@ -15,7 +15,6 @@ class CheckEnvCommand extends AirCommand
 
         if ($this->pass) {
             $this->console("Everything is OK!", "green");
-            $this->log("Hello");
         }
     }
 
@@ -24,8 +23,6 @@ class CheckEnvCommand extends AirCommand
         if (ini_get("short_open_tag") != 1) {
             $this->showError("short_open_tag should be enabled");
         }
-
-        return $this->pass;
     }
 
     private function checkMySQLLi()
@@ -53,6 +50,7 @@ class CheckEnvCommand extends AirCommand
 
     private function showError($message)
     {
+        $this->pass = false;
         $this->console($message, "red");
     }
 }
