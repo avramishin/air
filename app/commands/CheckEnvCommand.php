@@ -8,10 +8,12 @@ class CheckEnvCommand extends AirCommand
     function __construct()
     {
         $this->console("Performing Environment Check", "green");
+
         $this->shortOpenTag();
         $this->checkMySQLLi();
         $this->storageExists();
         $this->storageWritable();
+        $this->modelsWritable();
 
         if ($this->pass) {
             $this->console("Everything is OK!", "green");
@@ -45,6 +47,14 @@ class CheckEnvCommand extends AirCommand
         $storagePath = AIR_ROOT . "/storage";
         if (!is_writable($storagePath)) {
             $this->showError("storage dir not writable {$storagePath}");
+        }
+    }
+
+    private function modelsWritable()
+    {
+        $modelsPath = app_path("models");
+        if (!is_writable($modelsPath)) {
+            $this->showError("models dir not writable {$modelsPath}");
         }
     }
 

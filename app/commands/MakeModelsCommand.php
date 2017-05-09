@@ -21,6 +21,7 @@ class MakeModelsCommand extends AirCommand
              * @var $cfg array
              */
             $cfg = cfg("mysql");
+
             foreach ($cfg as $name => $data) {
                 $mapping[$i] = $name;
                 echo "{$i}. {$name} for {$data['user']}@{$data['host']} db {$data['name']}\n";
