@@ -1,5 +1,4 @@
 /.idea
-/data/logs/*
-/data/tmp/*
+/storage/*
 /vendor
 /composer.lock

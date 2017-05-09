@@ -1,7 +1,5 @@
 {
-  "require": {
-    "twig/twig": "~1.0",
-    "phpmailer/phpmailer": "^5.2",
-    "league/oauth2-google": "^2.0"
-  }
+    "require": {
+        "twig/twig": "^2.0"
+    }
 }
